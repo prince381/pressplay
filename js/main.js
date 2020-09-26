@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded',function() {
     // an array of videos to be added to our video playlist.
     const videos = [
         './videos/AirPods Pro - Apple_Full-HD.mp4',
-        './videos/Apple Watch -  Series 5_HD.mp4',
         './videos/iMac Pro - Power to the pro Apple Full-HD.mp4',
         './videos/iPad Pro - Your next computer is not a computer — Apple_HD.mp4',
         './videos/iPhone 11 - Apple_HD.mp4',
