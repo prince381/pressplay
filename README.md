@@ -12,6 +12,15 @@ This is an HTML5, CSS3, and JavaScript project that I built for learning purpose
 * an animated progress bar to track the current time of the video
 * user can click on a particular position on the progress bar to fast forward the video or seek backwards
 * select a video from the playlist
+* respond to keyboard shortcuts
+* automatically seeks the next video when current video ends.
+
+some of the keyboard shortcuts include:
+
+* spacebar or p - play/pause video
+* n - seek the next video
+* b - seek the previous video
+* r - restart the current video
 
 Again, this video player UI only runs in the browser and does not have all the features/functionalities expected from a real video player application. It's meant to be a demonstration of how to design a customized video player Interface using HTML, CSS, and JavaScript only.
 
