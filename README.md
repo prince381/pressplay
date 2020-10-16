@@ -20,3 +20,22 @@ Again, this video player UI only runs in the browser and does not have all the f
 A demo of how the application looks is provided in the screenshot below. Or you can check it out at [press-play.netlify.app](https://press-play.netlify.app/)
 
 ![](https://github.com/prince381/pressplay/blob/master/pp.png)
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+
+## Limitation of this project
+
+As stated before, this video player does not have all the features expected from an advanced video player application. Below are some of the features that were not included in the project:
+
+* volume control
+* add video to playlist from your local disk
+* remove video from playlist
+* create a new playlist etc...
+
+I intend to add some of these features in future project when I create a fully functioning media (audio and video) player desktop application with JavaScript. And that will be anytime soon !!!!!!
+
+#### Thanks and have a good day 👋
