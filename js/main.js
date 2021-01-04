@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded',function() {
     playBtn.addEventListener('click',playPause);
 
     // reacting to some keyboard keys when they are pressed.
-    window.addEventListener('keypress',function(e) {
+    window.addEventListener('keydown',function(e) {
         let pressedKey = e.key;
         if (pressedKey === ' ' || pressedKey === 'p') {
             // pause or play video when user presses spacebar or p.
@@ -97,6 +97,16 @@ document.addEventListener('DOMContentLoaded',function() {
         } else if (pressedKey === 'r') {
             // restart video when user presses r.
             videoPlayer.currentTime = 0.000;
+        } else if(pressedKey === 'ArrowDown') {
+            // reduce volume
+            videoPlayer.volume -= 0.1;
+        } else if(pressedKey === 'ArrowUp') {
+            // increase volume
+            videoPlayer.volume += 0.1;
+        } else if(pressedKey === 'ArrowLeft') {
+            videoPlayer.currentTime -= 5;
+        } else if(pressedKey === 'ArrowRight') {
+            videoPlayer.currentTime += 5;
         } else {
             return;
         }
@@ -139,11 +149,12 @@ document.addEventListener('DOMContentLoaded',function() {
     videoPlayer.addEventListener('timeupdate',() => {
         let totalTime = videoPlayer.duration;
         let currTime = videoPlayer.currentTime;
+        let pctWidth = Math.round((currTime / totalTime) * 100);
+        progress.style.width = pctWidth + '%';
+        
         if(currTime == totalTime) {
             seekNext();
         }
-        let pctWidth = Math.round((currTime / totalTime) * 100);
-        progress.style.width = pctWidth + '%';
     });
 
     // seek to a particular time when the user clicks on the progressbar.
@@ -183,6 +194,5 @@ document.addEventListener('DOMContentLoaded',function() {
     }
 
     nowPlaying();
-
 
 });
