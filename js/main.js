@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded',function() {
 
     // an array of videos to be added to our video playlist.
     const videos = [
-        './videos/AirPods Pro - Apple_Full-HD.mp4',
-        './videos/iMac Pro - Power to the pro Apple Full-HD.mp4',
-        './videos/iPad Pro - Your next computer is not a computer — Apple_HD.mp4',
-        './videos/iPhone 11 - Apple_HD.mp4',
-        './videos/iPhone 11 Pro - It’s tough out there — Apple_HD.mp4',
-        './videos/MacBook Pro - 16-inch — Apple_HD.mp4'
+        './videos/AirPods Pro - Apple_Full-HD.mp4' || '.\\videos\\AirPods Pro - Apple_Full-HD.mp4',
+        './videos/iMac Pro - Power to the pro Apple Full-HD.mp4' || '.\\videos\\iMac Pro - Power to the pro Apple Full-HD.mp4',
+        './videos/iPad Pro - Your next computer is not a computer — Apple_HD.mp4' || '.\\videos\\iPad Pro - Your next computer is not a computer — Apple_HD.mp4',
+        './videos/iPhone 11 - Apple_HD.mp4' || '.\\videos\\iPhone 11 - Apple_HD.mp4',
+        './videos/iPhone 11 Pro - It’s tough out there — Apple_HD.mp4' || '.\\videos\\iPhone 11 Pro - It’s tough out there — Apple_HD.mp4',
+        './videos/MacBook Pro - 16-inch — Apple_HD.mp4' || '.\\videos\\MacBook Pro - 16-inch — Apple_HD.mp4'
     ];
 
     // change the theme of the background when the toggle is switched.
